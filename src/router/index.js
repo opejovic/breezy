@@ -42,7 +42,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  linkExactActiveClass: "border-b-2 border-gray-900",
+  linkExactActiveClass: "text-gray-400",
   history: createWebHistory(process.env.BASE_URL),
   routes
 });
