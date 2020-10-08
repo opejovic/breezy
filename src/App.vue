@@ -1,5 +1,5 @@
 <template>
-  <div class=" min-h-screen font-inter bg-gray-100 px-10">
+  <div class=" min-h-screen font-inter bg-gray-100 px-10 py-10">
     <div class="w-full">
       <div class="flex">
         <div
