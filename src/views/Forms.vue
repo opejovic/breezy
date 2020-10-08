@@ -1,7 +1,10 @@
 <template>
-  <div>Forms go here</div>
+  <div id="forms">
+    <div class="text-2xl tracking-tight border-b w-full font-medium">Forms</div>
 
-  <loginOne />
+    <div></div>
+    <loginOne />
+  </div>
 </template>
 
 <script>
