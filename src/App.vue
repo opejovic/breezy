@@ -5,7 +5,7 @@
         <div
           class="flex flex-col pr-10 space-y-4 font-medium text-sm text-gray-700"
         >
-          <h1 class="font-mono">Categories</h1>
+          <h1 class="font-mono">breezy [ Vue.js x TailwindCSS ]</h1>
           <router-link to="/">Home</router-link>
           <router-link to="/page-examples">Page Examples</router-link>
           <router-link to="/forms">Forms</router-link>
