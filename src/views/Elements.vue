@@ -1,5 +1,9 @@
 <template>
-  <div>Elements section here</div>
+  <div class="text-2xl tracking-tight w-full font-medium pb-4">
+    Elements
+  </div>
+
+  Comming soon..
 </template>
 
 <script>

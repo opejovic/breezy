@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h1 class="text-2xl font-medium">Page Examples</h1>
+    <div class="text-2xl tracking-tight w-full font-medium pb-4">
+      Page examples
+    </div>
     <div id="landingOne" class="border rounded-lg  overflow-y-auto">
       <!--
         bg-one.svg needs to be placed in src/assets/images folder

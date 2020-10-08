@@ -1,8 +1,10 @@
 <template>
-  <div id="pages-section">
-    <h1>Pages</h1>
+  <div>
+    <div class="text-2xl tracking-tight w-full font-medium pb-4">
+      Pages section
+    </div>
 
-    <div>Hmmm</div>
+    Comming soon..
   </div>
 </template>
 
