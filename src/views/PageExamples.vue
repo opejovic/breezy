@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="text-2xl font-medium">Page Examples</h1>
-    <div id="landingOne" class="border h-auto rounded-lg">
+    <div id="landingOne" class="border rounded-lg  overflow-y-auto">
       <!--
         bg-one.svg needs to be placed in src/assets/images folder
       -->
@@ -11,7 +11,7 @@
           `background-image: url(${require('../assets/images/bg-one.svg')}); background-repeat: no-repeat;  background-size: 1100px 800px;`
         "
       >
-        <div class="container mx-auto">
+        <div class="container mx-auto pb-10">
           <header class="pt-4">
             <nav id="nav">
               <div class="flex items-center justify-between">

@@ -10,15 +10,15 @@
           <router-link to="/page-examples">Page Examples</router-link>
           <router-link to="/forms">Forms</router-link>
           <router-link to="/page-sections">Page Sections</router-link>
-          <router-link to="/forms">Elements</router-link>
-          <router-link to="/forms">Application Layout</router-link>
+          <router-link to="/elements">Elements</router-link>
+          <!-- <router-link to="/forms">Application Layout</router-link>
           <router-link to="/forms">Headings</router-link>
           <router-link to="/forms">Tables</router-link>
           <router-link to="/forms">Lists</router-link>
           <router-link to="/forms">General Data</router-link>
           <router-link to="/forms">Feedback</router-link>
           <router-link to="/forms">Navigation</router-link>
-          <router-link to="/forms">Overlays</router-link>
+          <router-link to="/forms">Overlays</router-link> -->
         </div>
         <div class="w-full">
           <router-view />

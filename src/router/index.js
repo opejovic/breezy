@@ -29,11 +29,20 @@ const routes = [
     path: "/loading-animations",
     name: "LoadingAnimations",
     component: () =>
-      import(/* webpackChunkName: "loadingAnimations" */ "../views/LoadingAnimations.vue")
+      import(
+        /* webpackChunkName: "loadingAnimations" */ "../views/LoadingAnimations.vue"
+      )
+  },
+  {
+    path: "/elements",
+    name: "Elements",
+    component: () =>
+      import(/* webpackChunkName: "elements" */ "../views/Elements.vue")
   }
 ];
 
 const router = createRouter({
+  linkExactActiveClass: "border-b-2 border-gray-900",
   history: createWebHistory(process.env.BASE_URL),
   routes
 });
