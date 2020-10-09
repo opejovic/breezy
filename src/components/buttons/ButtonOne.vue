@@ -1,7 +1,8 @@
 <template>
-  <div data-name="indigo-one">
+  <div data-name="button-one">
     <button
-      class="text-sm px-6 py-2 rounded-full flex items-center space-x-2 transition duration-500 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:shadow-outline"
+      class="text-sm px-6 py-2 rounded-full flex items-center space-x-2 transition duration-500 focus:outline-none focus:shadow-outline"
+      :class="`bg-${color}-200 hover:bg-${color}-300`"
     >
       <p>{{ title }}</p>
 
@@ -38,7 +39,11 @@ export default {
   props: {
     title: {
       type: String,
-      default: "Indigo One"
+      default: "Button One"
+    },
+    color: {
+      type: String,
+      default: "indigo"
     }
   }
 };

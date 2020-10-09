@@ -12,7 +12,7 @@
       <a class="underline" href="https://www.vuejs.org">Vue</a>
       and
       <a class="underline" href="https://www.tailwindcss.com">Tailwind</a>. Any
-      canvases / backgrounds you may encouter here are all drawn in Figma.
+      canvases / backgrounds you may see here are drawn in Figma.
     </div>
 
     <div>
@@ -26,10 +26,11 @@
     </div>
 
     <div>
-      Copy and paste away. PS. I could use a greet'n'tweet
+      Copy and paste away. PS. Say hello
       <a class="underline" href="https://twitter.com/opejovic">@opejovic</a>
-      in return, or a
-      <a href="https://github.com/opejovic/breezy" class="underline">star</a>.
+      and
+      <a href="https://github.com/opejovic/breezy" class="underline">star</a> me
+      up.
     </div>
     <p>
       Peace,

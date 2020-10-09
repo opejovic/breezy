@@ -7,7 +7,8 @@
     <div>
       <h3 class="border-b mb-4">Buttons</h3>
       <div class="flex items-center space-x-6">
-        <buttonOne />
+        <buttonOne title="Indigo One" color="indigo" />
+        <buttonOne title="Green One" color="green" />
       </div>
     </div>
 

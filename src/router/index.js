@@ -44,6 +44,14 @@ const routes = [
     name: "Backgrounds",
     component: () =>
       import(/* webpackChunkName: "backgrounds" */ "../views/Backgrounds.vue")
+  },
+  {
+    path: "/loading-animations",
+    name: "LoadingAnimations",
+    component: () =>
+      import(
+        /* webpackChunkName: "loadingAnimations" */ "../views/LoadingAnimations.vue"
+      )
   }
 ];
 
