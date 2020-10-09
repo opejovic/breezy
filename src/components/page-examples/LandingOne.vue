@@ -9,7 +9,7 @@
         `background-image: url(${require('@/assets/images/bg-one.svg')}); background-repeat: no-repeat;  background-size: 1100px 800px;`
       "
     >
-      <div class="container mx-auto pb-10">
+      <div class="container mx-auto pb-10 lg:px-10">
         <header class="pt-4">
           <nav id="nav">
             <div class="flex items-center justify-between">

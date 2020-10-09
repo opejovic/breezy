@@ -8,3 +8,7 @@
 
     # Buttons
     # Inputs etc
+
+# Loading animations
+
+[ ] Implement toggling of the animations. Make containers with dashed borders. Remove borders and show animation on toggle active.
