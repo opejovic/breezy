@@ -38,6 +38,12 @@ const routes = [
     name: "Elements",
     component: () =>
       import(/* webpackChunkName: "elements" */ "../views/Elements.vue")
+  },
+  {
+    path: "/backgrounds",
+    name: "Backgrounds",
+    component: () =>
+      import(/* webpackChunkName: "backgrounds" */ "../views/Backgrounds.vue")
   }
 ];
 
