@@ -29,9 +29,7 @@
       Copy and paste away. PS. I could use a greet'n'tweet
       <a class="underline" href="https://twitter.com/opejovic">@opejovic</a>
       in return, or a
-      <a href="https://github.com/opejovic/breezy/stargazers" class="underline"
-        >star</a
-      >.
+      <a href="https://github.com/opejovic/breezy" class="underline">star</a>.
     </div>
     <p>
       Peace,
