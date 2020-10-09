@@ -39,7 +39,7 @@
       Ognjen (awg-nyen)
     </p>
 
-    <p class="text-xs pt-10">This site was built in Vue x Tailwind. Duh.</p>
+    <p class="text-xs pt-10">This site is built in Vue3 x Tailwind.</p>
   </div>
 </template>
 

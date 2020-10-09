@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div class="">
     <div class="text-2xl tracking-tight w-full font-medium pb-4">
       Loading placeholder animations
     </div>
 
     <div
       id="animation-container"
-      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10"
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
     >
       <animatedPlaceholderOne />
       <animatedPlaceholderTwo />

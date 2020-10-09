@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen font-inter bg-white px-20 py-10">
+  <div class="min-h-screen font-inter bg-white px-5 sm:px-10 py-10">
     <div class="w-full">
       <!-- Display on small screens -->
       <div class="flex justify-between items-center xl:hidden mr-auto">
@@ -25,9 +25,9 @@
           </h1>
         </div>
         <div data-name="hamburger-menu relative">
-          <button id="hamburger" @click="toggle">
+          <button class="focus:outline-none" id="hamburger" @click="toggle">
             <svg
-              v-if="menuOpen"
+              v-if="state.menuOpen"
               class="w-8 h-8 text-gray-900"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +57,7 @@
       <!-- Menu on sm screens -->
       <div
         class="xl:hidden border-t border-b right-0 mr-10 py-10  w-full mb-6 flex flex-col space-y-2"
-        v-if="menuOpen"
+        v-if="state.menuOpen"
       >
         <router-link to="/">Home</router-link>
         <router-link to="/page-examples">Page Examples</router-link>
@@ -121,19 +121,24 @@
 </template>
 
 <script>
+import { reactive } from "vue";
+
 export default {
   name: "App",
 
-  data() {
-    return {
+  setup() {
+    const state = reactive({
       menuOpen: false
-    };
-  },
+    });
 
-  methods: {
-    toggle() {
-      return (this.menuOpen = !this.menuOpen);
+    function toggle() {
+      return (state.menuOpen = !state.menuOpen);
     }
+
+    return {
+      state,
+      toggle
+    };
   }
 };
 </script>
