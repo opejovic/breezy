@@ -4,7 +4,10 @@
       Loading placeholder animations
     </div>
 
-    <div id="animation-container" class="flex grid-cols-4 space-x-10">
+    <div
+      id="animation-container"
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10"
+    >
       <animatedPlaceholderOne />
       <animatedPlaceholderTwo />
       <animatedPlaceholderThree />

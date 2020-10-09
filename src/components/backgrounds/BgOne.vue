@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-y-scroll border rounded">
+  <div class="overflow-y-scroll border rounded-lg">
     <svg
       width="1096"
       height="886"

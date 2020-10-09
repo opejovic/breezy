@@ -1,5 +1,5 @@
 <template>
-  <div class="h-64 w-64 animated-placeholder-four rounded-lg"></div>
+  <div class="h-64 w-full animated-placeholder-four rounded-lg"></div>
 </template>
 
 <script>

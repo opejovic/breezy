@@ -1,5 +1,5 @@
 <template>
-  <div class=" min-h-screen font-inter bg-gray-100 px-10 py-10">
+  <div class="min-h-screen font-inter bg-white px-20 py-10">
     <div class="w-full">
       <!-- Display on small screens -->
       <div class="flex justify-between items-center xl:hidden mr-auto">
@@ -56,7 +56,7 @@
 
       <!-- Menu on sm screens -->
       <div
-        class="border-t border-b right-0 mr-10 py-10  w-full mb-6 flex flex-col space-y-2"
+        class="xl:hidden border-t border-b right-0 mr-10 py-10  w-full mb-6 flex flex-col space-y-2"
         v-if="menuOpen"
       >
         <router-link to="/">Home</router-link>
@@ -71,7 +71,7 @@
 
       <div class="flex">
         <!--
-          Hidden on lg screens
+          Hidden on sm screens
          -->
         <div
           class="hidden xl:flex flex-col pr-10 space-y-4 font-medium text-sm text-gray-700 w-1/12"
