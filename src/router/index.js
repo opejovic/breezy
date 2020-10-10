@@ -52,6 +52,12 @@ const routes = [
       import(
         /* webpackChunkName: "loadingAnimations" */ "../views/LoadingAnimations.vue"
       )
+  },
+  {
+    path: "/navigations",
+    name: "Navigations",
+    component: () =>
+      import(/* webpackChunkName: "navigations" */ "../views/Navigations.vue")
   }
 ];
 
