@@ -12,6 +12,7 @@
       <animatedPlaceholderTwo />
       <animatedPlaceholderThree />
       <animatedPlaceholderFour />
+      <animatedPlaceholderFive />
     </div>
   </div>
 </template>
@@ -21,6 +22,7 @@ import AnimatedPlaceholderOne from "@/components/loading-animations/AnimatedPlac
 import AnimatedPlaceholderTwo from "@/components/loading-animations/AnimatedPlaceholderTwo.vue";
 import AnimatedPlaceholderThree from "@/components/loading-animations/AnimatedPlaceholderThree.vue";
 import AnimatedPlaceholderFour from "@/components/loading-animations/AnimatedPlaceholderFour.vue";
+import AnimatedPlaceholderFive from "@/components/loading-animations/AnimatedPlaceholderFive.vue";
 
 export default {
   name: "LoadingAnimations",
@@ -29,7 +31,8 @@ export default {
     AnimatedPlaceholderOne,
     AnimatedPlaceholderTwo,
     AnimatedPlaceholderThree,
-    AnimatedPlaceholderFour
+    AnimatedPlaceholderFour,
+    AnimatedPlaceholderFive
   }
 };
 </script>
