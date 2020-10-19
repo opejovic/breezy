@@ -4,12 +4,18 @@
       Forms
     </div>
 
-    Comming soon..
+    <login-one />
   </div>
 </template>
 
 <script>
+import LoginOne from "@/components/forms/sign-in-and-registration/LoginOne.vue";
+
 export default {
-  name: "Forms"
+  name: "Forms",
+
+  components: {
+    LoginOne
+  }
 };
 </script>

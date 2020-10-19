@@ -43,9 +43,7 @@
                   </svg>
                 </a>
               </div>
-              <!--
-                    active classes: 'text-white border-b-2 border-white'
-                -->
+              <!-- active classes: 'text-white border-b-2 border-white' -->
               <div data-name="middle" class="flex space-x-8 text-sm">
                 <a class="text-white border-b-2 border-white" href="#">Home</a>
                 <a

@@ -26,14 +26,6 @@ const routes = [
       import(/* webpackChunkName: "pageExamples" */ "../views/PageExamples.vue")
   },
   {
-    path: "/loading-animations",
-    name: "LoadingAnimations",
-    component: () =>
-      import(
-        /* webpackChunkName: "loadingAnimations" */ "../views/LoadingAnimations.vue"
-      )
-  },
-  {
     path: "/elements",
     name: "Elements",
     component: () =>
@@ -46,12 +38,10 @@ const routes = [
       import(/* webpackChunkName: "backgrounds" */ "../views/Backgrounds.vue")
   },
   {
-    path: "/loading-animations",
-    name: "LoadingAnimations",
+    path: "/animations",
+    name: "Animations",
     component: () =>
-      import(
-        /* webpackChunkName: "loadingAnimations" */ "../views/LoadingAnimations.vue"
-      )
+      import(/* webpackChunkName: "Animations" */ "../views/Animations.vue")
   },
   {
     path: "/navigations",

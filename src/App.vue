@@ -66,7 +66,7 @@
         <router-link to="/forms">Forms</router-link>
         <router-link to="/elements">Elements</router-link>
         <router-link to="/backgrounds">Backgrounds</router-link>
-        <router-link to="/loading-animations">Loading Animations</router-link>
+        <router-link to="/animations">Animations</router-link>
       </div>
       <!-- End small screen menu  -->
 
@@ -103,7 +103,7 @@
           <router-link to="/forms">Forms</router-link>
           <router-link to="/elements">Elements</router-link>
           <router-link to="/backgrounds">Backgrounds</router-link>
-          <router-link to="/loading-animations">Loading Animations</router-link>
+          <router-link to="/animations">Animations</router-link>
           <!-- <router-link to="/forms">Application Layout</router-link>
           <router-link to="/forms">Headings</router-link>
           <router-link to="/forms">Tables</router-link>
