@@ -3,12 +3,13 @@
     <!--
         bg-one.svg needs to be placed in src/assets/images folder
       -->
-    <div
+    <!-- <div
       class="min-h-screen bg-white"
       :style="
         `background-image: url(${require('@/assets/images/bg-one.svg')}); background-repeat: no-repeat;  background-size: 1100px 800px;`
       "
-    >
+    > -->
+    <div class="min-h-screen bg-white intro">
       <div class="container mx-auto pb-10 lg:px-10">
         <header class="pt-4">
           <nav id="nav">
@@ -348,3 +349,20 @@ export default {
   name: "LandingOne"
 };
 </script>
+
+<style lang="css">
+.intro {
+  position: relative;
+  z-index: 1;
+}
+.intro::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -3;
+  background: url("../../assets/images/bg-one.svg") left top no-repeat;
+}
+</style>
