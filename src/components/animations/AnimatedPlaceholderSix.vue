@@ -29,17 +29,11 @@ export default {
 .animated-placeholder-six {
   background: linear-gradient(
     264.51deg,
-    #e9d790 2.19%,
-    #ffe580 4.38%,
-    #e7716d 11.58%,
-    #dd5d5a 25.16%,
-    #c84891 36.02%,
-    #7d59bd 47.63%,
-    #9867f0 59.03%,
-    #3addc7 69.96%,
-    #33ce79 83.74%,
-    #90c393 94.62%,
-    #90c393 98.92%
+    #b89ef3 0%,
+    #8d80ff 25%,
+    #515cc5 50%,
+    #5addd2 75%,
+    #48b9c8 100%
   );
   background-position-x: 0%;
   background-position-y: 0%;
@@ -48,7 +42,7 @@ export default {
   background-position: 58% 50%;
   background-position-x: 58%;
   background-position-y: 50%;
-  background-size: 500%;
+  background-size: 600%;
   -webkit-background-clip: border-box;
   background-clip: border-box;
   background-clip: border-box;
