@@ -6,11 +6,13 @@
         id="animation-container"
         class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
       >
-        <animatedPlaceholderOne />
-        <animatedPlaceholderTwo />
-        <animatedPlaceholderThree />
-        <animatedPlaceholderFour />
-        <animatedPlaceholderFive />
+        <button @click="showModal">
+          <AnimatedPlaceholderOne />
+        </button>
+        <AnimatedPlaceholderTwo />
+        <AnimatedPlaceholderThree />
+        <AnimatedPlaceholderFour />
+        <AnimatedPlaceholderFive />
       </div>
     </div>
     <div class="text-2xl tracking-tight w-full font-medium pb-4 space-y-5">
@@ -42,7 +44,13 @@ export default {
     AnimatedPlaceholderThree,
     AnimatedPlaceholderFour,
     AnimatedPlaceholderFive,
-    AnimatedPlaceholderSix
-  }
+    AnimatedPlaceholderSix,
+  },
+
+  methods: {
+    showModal() {
+      console.log("eee");
+    },
+  },
 };
 </script>

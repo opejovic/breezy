@@ -56,7 +56,7 @@
 
       <!-- Menu on sm screens -->
       <div
-        class="xl:hidden border-t border-b right-0 mr-10 py-10  w-full mb-6 flex flex-col space-y-2"
+        class="xl:hidden border-t border-b right-0 mr-10 py-10 w-full mb-6 flex flex-col space-y-2"
         v-if="state.menuOpen"
       >
         <router-link to="/">Home</router-link>
@@ -130,7 +130,7 @@ export default {
 
   setup() {
     const state = reactive({
-      menuOpen: false
+      menuOpen: false,
     });
 
     function toggle() {
@@ -139,8 +139,11 @@ export default {
 
     return {
       state,
-      toggle
+      toggle,
     };
-  }
+  },
 };
 </script>
+
+<style lang="scss">
+</style>

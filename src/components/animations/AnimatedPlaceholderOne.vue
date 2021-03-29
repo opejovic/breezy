@@ -4,11 +4,18 @@
 
 <script>
 export default {
-  name: "AnimatedPlaceholderOne"
+  name: "AnimatedPlaceholderOne",
 };
 </script>
 
 <style lang="scss" scoped>
+// .animated-placeholder-one:hover {
+//   -webkit-animation: none;
+//   -moz-animation: none;
+//   animation: none;
+//   background: red;
+// }
+
 .animated-placeholder-one {
   background: linear-gradient(-90deg, #eef2f6, #ffffff, #bcbfc3);
   background-size: 400% 400%;

@@ -7,6 +7,7 @@
       <bgOne />
       <bgTwo />
       <bgThree />
+      <bgFour />
     </div>
   </div>
 </template>
@@ -15,6 +16,7 @@
 import BgOne from "@/components/backgrounds/BgOne.vue";
 import BgTwo from "@/components/backgrounds/BgTwo.vue";
 import BgThree from "@/components/backgrounds/BgThree.vue";
+import BgFour from "@/components/backgrounds/BgFour.vue";
 
 export default {
   name: "Backgrounds",
@@ -22,7 +24,11 @@ export default {
   components: {
     BgOne,
     BgTwo,
-    BgThree
-  }
+    BgThree,
+    BgFour,
+  },
 };
 </script>
+
+<style lang="scss" scoped>
+</style>

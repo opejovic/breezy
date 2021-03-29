@@ -32,20 +32,17 @@
       <a href="https://github.com/opejovic/breezy" class="underline">star</a> me
       up.
     </div>
-    <p>
-      Peace,
-    </p>
-    <p>
-      Ognjen (awg-nyen)
-    </p>
+    <p>Peace,</p>
+    <p>Og</p>
 
-    <p class="text-xs pt-10">This site is built in Vue3 x Tailwind.</p>
+    <p class="text-xs pt-10">Built with Vue3 x Tailwind.</p>
   </div>
+
+  <MDXProvider v-bind:components="components"><Test /> </MDXProvider>
 </template>
 
 <script>
 export default {
   name: "Home",
-  components: {}
 };
 </script>

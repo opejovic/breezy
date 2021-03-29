@@ -1,5 +1,5 @@
 <template>
-  <div class="overflow-y-scroll border rounded-lg ">
+  <div class="overflow-y-scroll border rounded-lg">
     <svg
       width="1096"
       height="886"
@@ -28,7 +28,7 @@
 
 <script>
 export default {
-  name: "BgOne"
+  name: "BgOne",
 };
 </script>
 
