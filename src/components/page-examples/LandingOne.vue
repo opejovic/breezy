@@ -1,10 +1,10 @@
 <template>
   <splitpanes class="default-theme" vertical>
-    <pane :size="size">
+    <pane :size="size" min-size="30">
       <iframe
         id="iframe"
-        class="w-full border rounded-lg min-h-screen h-full"
-        :srcdoc="data.second"
+        class="w-full border min-h-screen h-full"
+        :srcdoc="data.landingOne"
         frameborder="0"
       ></iframe>
     </pane>
@@ -14,7 +14,7 @@
 
 <script>
 import { onMounted, ref } from "vue";
-import data from "@/first";
+import data from "@/data";
 import { Splitpanes, Pane } from "splitpanes";
 import "splitpanes/dist/splitpanes.css";
 
@@ -56,4 +56,19 @@ export default {
   z-index: -3;
   background: url("../../assets/images/bg-one.svg") left top no-repeat;
 }
+.default-theme.splitpanes--vertical>.splitpanes__splitter:after, .default-theme .splitpanes--vertical>.splitpanes__splitter:after {
+  margin-left: 8px !important;
+}
+
+.default-theme.splitpanes--vertical>.splitpanes__splitter:before, .default-theme .splitpanes--vertical>.splitpanes__splitter:before {
+    margin-left: 0px !important;
+}
+
+.default-theme.splitpanes--vertical>.splitpanes__splitter:after, .default-theme .splitpanes--vertical>.splitpanes__splitter:after, .default-theme.splitpanes--vertical>.splitpanes__splitter:before, .default-theme .splitpanes--vertical>.splitpanes__splitter:before {
+  width: 3px;
+  height: 30px;
+  background: darkgrey;
+  border-radius: 5px;
+}
+
 </style>

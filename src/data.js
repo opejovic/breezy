@@ -1,160 +1,4 @@
-const first = `<html>
-
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <link rel="stylesheet" href="/css/components-v2.css?id=a5d784f6da33a611ea11">
-    <script src="/js/components-v2.js?id=7493e8f1c9e9d9cc37f2"></script>
-    <script src="/js/iframe.js?id=1b0c2717805a0c9fbb06"></script>
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.js" defer=""></script>
-  </head>
-
-  <body class="antialiased font-sans bg-gray-200">
-    <div class="" style="">
-
-      <div class="relative bg-white overflow-hidden" x-data="Components.popover({ open: false, focus: true })"
-        x-init="init()" @keydown.escape="onEscape" @close-popover-group.window="onClosePopoverGroup">
-        <div class="max-w-7xl mx-auto">
-          <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-            <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
-              fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-              <polygon points="50,0 100,0 50,100 0,100"></polygon>
-            </svg>
-
-            <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
-              <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
-                <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
-                  <div class="flex items-center justify-between w-full md:w-auto">
-                    <a href="#">
-                      <span class="sr-only">Workflow</span>
-                      <img class="h-8 w-auto sm:h-10"
-                        src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg">
-                    </a>
-                    <div class="-mr-2 flex items-center md:hidden">
-                      <button type="button"
-                        class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-                        @click="toggle" @mousedown="if (open) $event.preventDefault()" aria-expanded="false"
-                        :aria-expanded="open.toString()">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="h-6 w-6" x-description="Heroicon name: outline/menu"
-                          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                          aria-hidden="true">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-
-                  <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Product</a>
-
-                  <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Features</a>
-
-                  <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Marketplace</a>
-
-                  <a href="#" class="font-medium text-gray-500 hover:text-gray-900">Company</a>
-
-                  <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">Log in</a>
-                </div>
-              </nav>
-            </div>
-
-
-            <div x-show="open" x-transition:enter="duration-150 ease-out" x-transition:enter-start="opacity-0 scale-95"
-              x-transition:enter-end="opacity-100 scale-100" x-transition:leave="duration-100 ease-in"
-              x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-95"
-              x-description="Mobile menu, show/hide based on menu open state."
-              class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden" x-ref="panel"
-              @click.away="open = false" style="display: none;">
-              <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
-                <div class="px-5 pt-4 flex items-center justify-between">
-                  <div>
-                    <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="">
-                  </div>
-                  <div class="-mr-2">
-                    <button type="button"
-                      class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-                      @click="toggle">
-                      <span class="sr-only">Close main menu</span>
-                      <svg class="h-6 w-6" x-description="Heroicon name: outline/x" xmlns="http://www.w3.org/2000/svg"
-                        fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
-                        </path>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-                <div class="px-2 pt-2 pb-3 space-y-1">
-
-                  <a href="#"
-                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Product</a>
-
-                  <a href="#"
-                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Features</a>
-
-                  <a href="#"
-                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Marketplace</a>
-
-                  <a href="#"
-                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Company</a>
-
-                </div>
-                <a href="#"
-                  class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100">
-                  Log in
-                </a>
-              </div>
-            </div>
-
-
-            <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-              <div class="sm:text-center lg:text-left">
-                <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                  <span class="block xl:inline">Data to enrich your</span>
-                  <!-- space -->
-                  <span class="block text-indigo-600 xl:inline">online business</span>
-                </h1>
-                <p
-                  class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
-                  amet fugiat veniam occaecat fugiat aliqua.
-                </p>
-                <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                  <div class="rounded-md shadow">
-                    <a href="#"
-                      class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
-                      Get started
-                    </a>
-                  </div>
-                  <div class="mt-3 sm:mt-0 sm:ml-3">
-                    <a href="#"
-                      class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10">
-                      Live demo
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </main>
-          </div>
-        </div>
-        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-            src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2850&amp;q=80"
-            alt="">
-        </div>
-      </div>
-
-    </div>
-    <div style="clear: both; display: block; height: 0px;"></div>
-  </body>
-
-</html>`;
-
-const second = `<html lang="en">
+const landingOne = `<html lang="en">
 
   <head>
     <meta charset="utf-8">
@@ -181,16 +25,16 @@ const second = `<html lang="en">
     </style>
   </head>
 
-  <body class="antialiased font-sans">
-    <div id="landingOne" class="hidden md:block">
+  <body class="antialiased font-sans overflow-x-hidden">
+    <div id="landingOne">
       <div>
         <div id="bg" class="min-h-screen bg-white intro">
-          <div class="container mx-auto pb-10 lg:px-10">
+          <div class="container mx-auto pb-10 px-6 lg:px-10">
             <header class="pt-4">
               <nav id="nav">
                 <div class="flex items-center justify-between">
                   <div data-name="logo-container">
-                    <a href="#">
+                    <a class="cursor-pointer">
                       <svg width="163" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M32.6 18.1a3 3 0 002.8-1.5V18h3.1v-6.5c0-2-1.7-3.3-4.2-3.3-2.7 0-4.3 1.3-4.4 3.2h2.8c0-.5.6-.9 1.4-.9.9 0 1.3.4 1.3 1.1v.5l-2.2.2c-2.4.1-3.8 1.1-3.8 3 0 1.6 1.3 2.8 3.2 2.8zm-.2-3c0-.6.5-1 1.3-1l1.7-.2v.7c0 .8-.7 1.4-1.7 1.4-.8 0-1.3-.4-1.3-1zm9.4 2.9h3.3l1.5-6.4 1.6 6.4h3.4L54 8.4h-3l-1.3 6.8-1.5-6.8h-3l-1.4 6.8h-.1l-1.2-6.8h-3.2l2.5 9.6zm17.5.2c3 0 4.2-1.8 4.5-3.1V15H61c-.1.4-.7 1-1.7 1-1.1 0-1.8-.8-1.8-2h6.4v-1c0-2.9-1.9-4.8-4.7-4.8-3 0-4.8 2-4.8 5 0 3.1 1.8 5 4.9 5zm0-7.8c.8 0 1.5.6 1.6 1.7h-3.4c.2-1 .8-1.7 1.7-1.7zm10 7.8c2.6 0 4.4-1.3 4.4-3.2 0-1.5-.9-2.3-2.9-2.7l-1.7-.3c-.9-.2-1.2-.4-1.2-.8 0-.6.5-.9 1.3-.9.9 0 1.3.5 1.4 1v.1h2.9c0-1.8-1.5-3.2-4.3-3.2-2.6 0-4.3 1.2-4.3 3.1 0 1.5 1 2.5 2.9 2.8l1.7.4c.8.1 1.1.4 1.1.8 0 .5-.5.8-1.3.8-1 0-1.4-.4-1.5-1V15h-3c.1 2 1.7 3.2 4.5 3.2zm10.1 0c3 0 5-1.8 5-5 0-3.1-2-5-5-5s-4.9 1.9-4.9 5c0 3.2 2 5 5 5zm0-2.4c-1 0-1.7-.9-1.7-2.6 0-1.7.7-2.6 1.7-2.6 1.1 0 1.8 1 1.8 2.6 0 1.7-.7 2.6-1.8 2.6zm6.1 2.2h3.2v-5.7c0-1 .5-1.5 1.3-1.5.9 0 1.4.5 1.4 1.5V18h3v-5.7c0-1 .5-1.5 1.3-1.5 1 0 1.4.5 1.4 1.5V18h3v-6.5c0-2-1.2-3.3-3-3.3-1.5 0-2.6.8-3 2-.3-1.2-1.3-2-2.7-2-1.3 0-2.3.8-2.7 2V8.4h-3.2V18zm20.7.2c3 0 4.3-1.8 4.6-3.1V15H108c-.2.4-.7 1-1.7 1-1.1 0-1.8-.8-1.9-2h6.5v-1c0-2.9-1.9-4.8-4.8-4.8s-4.7 2-4.7 5c0 3.1 1.8 5 4.8 5zm0-7.8c1 0 1.6.6 1.7 1.7h-3.4c.1-1 .8-1.7 1.7-1.7z"
@@ -212,15 +56,15 @@ const second = `<html lang="en">
                     </a>
                   </div>
                   <!-- active classes: 'text-white border-b-2 border-white' -->
-                  <div data-name="middle" class="flex space-x-8 text-sm">
+                  <div data-name="middle" class="flex space-x-8 text-sm hidden lg:block">
                     <a class="text-white border-b-2 border-white" href="#">Home</a>
-                    <a class="text-gray-900 transition duration-200 hover:text-white" href="#">Link One</a>
-                    <a class="text-gray-900 transition duration-200 hover:text-white" href="#">Link Two</a>
-                    <a class="text-gray-900 transition duration-200 hover:text-white" href="#">Link Three</a>
+                    <a class="text-gray-900 transition duration-200 hover:text-white cursor-pointer">Link One</a>
+                    <a class="text-gray-900 transition duration-200 hover:text-white cursor-pointer">Link Two</a>
+                    <a class="text-gray-900 transition duration-200 hover:text-white cursor-pointer">Link Three</a>
                   </div>
                   <div data-name="sign-in">
                     <button
-                      class="text-sm px-6 py-2 rounded-full flex items-center space-x-2 transition duration-500 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:shadow-outline">
+                      class="text-sm px-6 py-2 rounded-full hidden lg:flex items-center space-x-2 transition duration-500 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:shadow-outline">
                       <p>Sign in</p>
 
                       <svg class="w-3 h-3" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -239,9 +83,9 @@ const second = `<html lang="en">
               </nav>
             </header>
 
-            <div class="flex justify-between items-top pt-16 space-x-10">
-              <section data-name="greeting-text" class="w-1/2 pt-20">
-                <h1 class="text-6xl font-extrabold text-gray-900 tracking-tight leading-none">
+            <div class="lg:flex justify-between items-top pt-16 lg:space-x-10">
+              <section data-name="greeting-text" class="w-full pt-4 lg:w-1/2 lg:pt-20">
+                <h1 class="text-5xl lg:text-6xl font-extrabold text-gray-900 tracking-tight leading-none">
                   Lorem ipsum dolor sit amet.
                 </h1>
                 <p class="text-gray-800 pt-5 pr-6">
@@ -252,7 +96,7 @@ const second = `<html lang="en">
                   type specimen book.
                 </p>
 
-                <div class="pt-10">
+                <div class="pt-10 pb-10 lg:pb-0">
                   <button
                     class="text-sm px-6 py-2 rounded-full flex items-center space-x-2 transition duration-500 bg-green-300 hover:bg-green-400 focus:outline-none focus:shadow-outline">
                     <p>Contact sales</p>
@@ -270,7 +114,7 @@ const second = `<html lang="en">
                   </button>
                 </div>
               </section>
-              <div class="w-2/5">
+              <div class="w-full lg:w-2/5">
                 <form style="box-shadow: 0px 3px 30px rgba(0, 0, 0, 0.1)" class="bg-white rounded-lg">
                   <div class="p-10 space-y-5">
                     <select class="w-full bg-gray-100 rounded-lg px-4 py-4 text-sm" name="" id="">
@@ -298,14 +142,14 @@ const second = `<html lang="en">
                     SEARCH
                   </button>
                 </form>
-                <a href="http://"
-                  class="text-center block pt-4 text-gray-900 transition duration-200 hover:text-gray-500">Advanced
+                <a
+                  class="cursor-pointer text-center block pt-4 text-gray-900 transition duration-200 hover:text-gray-500">Advanced
                   search</a>
               </div>
             </div>
 
-            <section id="icons" class="flex justify-between items-center pt-32">
-              <div data-name="instacart">
+            <section id="icons" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center pt-32">
+              <div class="w-32 h-32" data-name="instacart">
                 <svg class="text-gray-700" width="200" height="40" viewBox="0 0 200 40" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -316,7 +160,7 @@ const second = `<html lang="en">
                     fill="currentColor" />
                 </svg>
               </div>
-              <div data-name="google">
+              <div class="w-32 h-32" data-name="google">
                 <svg class="text-gray-700" width="200" height="40" viewBox="0 0 200 40" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -338,7 +182,7 @@ const second = `<html lang="en">
                 </svg>
               </div>
 
-              <div data-name="slack">
+              <div class="w-32 h-32" data-name="slack">
                 <svg class="text-gray-700" width="200" height="40" viewBox="0 0 200 40" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -358,27 +202,12 @@ const second = `<html lang="en">
                     fill="currentColor" />
                 </svg>
               </div>
-              <div data-name="lyft">
+              <div class="w-32 h-32" data-name="lyft">
                 <svg class="text-gray-700" width="200" height="40" viewBox="0 0 200 40" fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M75.18 3.60001H82.89V24.34C82.89 27.64 84.38 29.59 85.59 30.41C84.33 31.51 80.51 32.49 77.64 30.13C75.94 28.74 75.18 26.43 75.18 24.27V3.59001V3.60001ZM123.33 20.85V18.66H125.69V11.02H123.1C122.541 8.59081 121.109 6.45126 119.078 5.00697C117.046 3.56268 114.555 2.91406 112.077 3.18406C109.599 3.45406 107.306 4.62392 105.633 6.47186C103.96 8.3198 103.023 10.7174 103 13.21V31.03C103.903 31.1779 104.828 31.1303 105.711 30.8905C106.594 30.6507 107.416 30.2243 108.12 29.64C109.82 28.25 110.58 25.94 110.58 23.78V23.11H114.43V15.47H110.58V13.16C110.58 12.4731 110.853 11.8143 111.339 11.3286C111.824 10.8429 112.483 10.57 113.17 10.57C113.857 10.57 114.516 10.8429 115.001 11.3286C115.487 11.8143 115.76 12.4731 115.76 13.16V20.82C115.76 23.52 116.83 26.1099 118.737 28.0219C120.643 29.9339 123.23 31.0121 125.93 31.02V23.42C125.591 23.4213 125.255 23.3559 124.942 23.2275C124.628 23.099 124.343 22.9101 124.103 22.6714C123.862 22.4328 123.671 22.1491 123.54 21.8366C123.409 21.5241 123.341 21.1888 123.34 20.85H123.33ZM94.17 11V22.23C94.17 22.88 93.63 23.39 92.99 23.39C92.35 23.39 91.81 22.88 91.81 22.23V11H84.21V24.19C84.21 26.55 84.99 29.56 88.66 30.54C92.32 31.52 94.43 29.49 94.43 29.49C94.23 30.82 92.99 31.8 90.97 32.01C89.4443 32.0775 87.9222 31.8113 86.51 31.23V38.23C88.99 38.97 91.61 39.21 94.2 38.69C98.86 37.79 101.8 33.89 101.8 28.66V10.95H94.17V11Z"
                     fill="currentColor" />
-                </svg>
-              </div>
-
-              <div data-name="amazon">
-                <svg class="text-gray-700" width="93" height="28" viewBox="0 0 93 28" fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M57.5929 21.85C52.1929 25.84 44.3829 27.94 37.6529 27.94C28.6576 27.9883 19.9677 24.6792 13.2829 18.66C12.7829 18.21 13.2329 17.58 13.8429 17.94C21.2651 22.1786 29.6656 24.4054 38.2129 24.4C44.1929 24.4 50.7629 23.16 56.8129 20.6C57.7129 20.21 58.4829 21.2 57.5929 21.85Z"
-                    fill="fillCurrent" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M59.8329 19.3C59.1429 18.42 55.2729 18.88 53.5329 19.09C53.0129 19.15 52.9329 18.69 53.4029 18.36C56.4929 16.19 61.5529 16.82 62.1329 17.54C62.7329 18.28 61.9829 23.34 59.0929 25.75C58.6429 26.13 58.2229 25.93 58.4229 25.44C59.0729 23.81 60.5229 20.18 59.8329 19.3Z"
-                    fill="fillCurrent" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M53.6629 3.07V0.969999C53.6629 0.639999 53.9029 0.429999 54.1929 0.429999H63.6429C63.9429 0.429999 64.1829 0.65 64.1829 0.96V2.76C64.1829 3.06 63.9229 3.46 63.4729 4.09L58.5729 11.06C60.3929 11.02 62.3129 11.29 63.9729 12.22C64.3329 12.42 64.4429 12.73 64.4729 13.04V15.28C64.4729 15.59 64.1329 15.95 63.7729 15.76C62.2282 14.9676 60.5165 14.556 58.7805 14.5595C57.0444 14.5629 55.3344 14.9814 53.7929 15.78C53.4629 15.95 53.1229 15.6 53.1229 15.29V13.16C53.1229 12.82 53.1229 12.23 53.4729 11.71L59.1429 3.6H54.2029C54.1325 3.60133 54.0625 3.5886 53.997 3.56256C53.9315 3.53652 53.8719 3.49769 53.8216 3.44835C53.7714 3.399 53.7314 3.34012 53.7042 3.27516C53.6769 3.2102 53.6629 3.14045 53.6629 3.07ZM19.2129 16.2H16.3329C16.2065 16.1914 16.0871 16.1386 15.9957 16.0508C15.9043 15.9631 15.8467 15.846 15.8329 15.72V1C15.8329 0.7 16.0729 0.469999 16.3829 0.469999H19.0529C19.3329 0.479999 19.5529 0.699999 19.5729 0.969999V2.89H19.6329C20.3329 1.03 21.6329 0.16 23.4129 0.16C25.2129 0.16 26.3329 1.03 27.1429 2.89C27.4286 2.07412 27.9661 1.37008 28.6778 0.879416C29.3896 0.388757 30.2387 0.13684 31.1029 0.16C32.3029 0.16 33.6229 0.659999 34.4329 1.77C35.3329 3.01 35.1529 4.81 35.1529 6.39V15.67C35.1529 15.97 34.9029 16.2 34.6029 16.2H31.7329C31.5966 16.195 31.4672 16.1387 31.3707 16.0422C31.2742 15.9457 31.2178 15.8163 31.2129 15.68V7.88C31.2129 7.25 31.2729 5.7 31.1329 5.12C30.9129 4.12 30.2729 3.85 29.4429 3.85C28.7429 3.85 28.0229 4.31 27.7229 5.05C27.4329 5.8 27.4629 7.04 27.4629 7.87V15.67C27.4629 15.97 27.2129 16.2 26.9029 16.2H24.0329C23.8983 16.1926 23.7714 16.1351 23.677 16.0389C23.5827 15.9427 23.5277 15.8147 23.5229 15.68V7.88C23.5229 6.23 23.7829 3.82 21.7529 3.82C19.6829 3.82 19.7629 6.17 19.7629 7.87V15.67C19.7629 15.97 19.5129 16.2 19.2129 16.2ZM72.3229 3.17C70.2129 3.17 70.0729 6.05 70.0729 7.84C70.0729 9.64 70.0529 13.48 72.3029 13.48C74.5229 13.48 74.6329 10.38 74.6329 8.49C74.6329 7.25 74.5829 5.77 74.2029 4.59C73.8829 3.57 73.2429 3.17 72.3229 3.17ZM72.3029 0.16C76.5629 0.16 78.8729 3.82 78.8729 8.46C78.8729 12.96 76.3229 16.51 72.3029 16.51C68.1129 16.51 65.8429 12.86 65.8429 8.31C65.8429 3.72 68.1429 0.16 72.3029 0.16ZM84.4029 16.2H81.5329C81.3983 16.1926 81.2714 16.1351 81.177 16.0389C81.0827 15.9427 81.0277 15.8147 81.0229 15.68V0.94C81.04 0.806575 81.1054 0.684049 81.2068 0.595598C81.3081 0.507148 81.4384 0.458907 81.5729 0.46H84.2329C84.4829 0.47 84.6929 0.64 84.7429 0.87V3.12H84.7929C85.6029 1.11 86.7329 0.15 88.7129 0.15C90.0029 0.15 91.2629 0.619999 92.0629 1.89C92.8129 3.06 92.8129 5.05 92.8129 6.47V15.73C92.7914 15.8598 92.7241 15.9775 92.6231 16.0619C92.5222 16.1463 92.3944 16.1918 92.2629 16.19H89.3829C89.2595 16.1822 89.1425 16.1322 89.0515 16.0485C88.9605 15.9648 88.901 15.8523 88.8829 15.73V7.73C88.8829 6.13 89.0629 3.78 87.0829 3.78C86.3829 3.78 85.7329 4.24 85.4129 4.95C85.0129 5.85 84.9529 6.75 84.9529 7.74V15.66C84.9529 15.96 84.7029 16.19 84.4029 16.19V16.2ZM49.0229 16.16C48.9291 16.2379 48.8137 16.2854 48.6923 16.2961C48.5708 16.3069 48.4489 16.2803 48.3429 16.22C47.3829 15.43 47.2129 15.07 46.6929 14.32C45.1229 15.92 43.9929 16.4 41.9629 16.4C39.5429 16.4 37.6629 14.9 37.6629 11.93C37.6284 10.9284 37.9037 9.94053 38.4514 9.10119C38.999 8.26184 39.7922 7.61189 40.7229 7.24C42.2829 6.56 44.4629 6.44 46.1229 6.24V5.88C46.1229 5.19 46.1829 4.38 45.7729 3.8C45.4229 3.27 44.7529 3.05 44.1629 3.05C43.0629 3.05 42.0929 3.61 41.8529 4.77C41.8029 5.03 41.6129 5.29 41.3529 5.3L38.5729 5C38.3329 4.95 38.0729 4.76 38.1429 4.4C38.7829 1.03 41.8329 0 44.5629 0C45.9629 0 47.7929 0.38 48.8929 1.44C50.2929 2.74 50.1529 4.48 50.1529 6.37V10.84C50.1529 12.18 50.7129 12.77 51.2429 13.5C51.4229 13.76 51.4629 14.07 51.2329 14.26C50.6429 14.75 49.6029 15.66 49.0329 16.16H49.0229ZM46.1229 9.16C46.1229 10.28 46.1529 11.21 45.5829 12.21C45.1329 13.01 44.4029 13.51 43.6029 13.51C42.5029 13.51 41.8529 12.67 41.8529 11.43C41.8529 8.99 44.0529 8.55 46.1229 8.55V9.16ZM11.3629 16.16C11.2691 16.2379 11.1537 16.2854 11.0323 16.2961C10.9108 16.3069 10.7889 16.2803 10.6829 16.22C9.73289 15.43 9.56289 15.07 9.03289 14.32C7.46289 15.92 6.34289 16.4 4.30289 16.4C1.88289 16.4 0.00288917 14.9 0.00288917 11.93C-0.0316208 10.9284 0.243723 9.94053 0.791357 9.10119C1.33899 8.26184 2.13224 7.61189 3.06289 7.24C4.62289 6.56 6.80289 6.44 8.46289 6.24V5.88C8.46289 5.19 8.52289 4.38 8.11289 3.8C7.77289 3.27 7.09289 3.05 6.51289 3.05C5.41289 3.05 4.43289 3.61 4.19289 4.77C4.14289 5.03 3.95289 5.29 3.69289 5.3L0.912889 5C0.682889 4.95 0.412889 4.76 0.482889 4.4C1.12289 1.03 4.18289 0 6.91289 0C8.31289 0 10.1329 0.38 11.2329 1.44C12.6329 2.74 12.5029 4.48 12.5029 6.37V10.84C12.5029 12.18 13.0529 12.77 13.5829 13.5C13.7629 13.76 13.8029 14.07 13.5729 14.26C12.9829 14.75 11.9429 15.66 11.3729 16.16H11.3629ZM8.46289 9.16C8.46289 10.28 8.49289 11.21 7.93289 12.21C7.47289 13.01 6.75289 13.51 5.93289 13.51C4.83289 13.51 4.19289 12.67 4.19289 11.43C4.19289 8.99 6.39289 8.55 8.47289 8.55V9.16H8.46289Z"
-                    fill="fillCurrent" />
                 </svg>
               </div>
             </section>
@@ -391,6 +220,5 @@ const second = `<html lang="en">
 </html>`;
 
 export default {
-first,
-second
+  landingOne,
 }
