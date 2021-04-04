@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["pageSections"],{"6cb1":function(e,n,t){"use strict";t.r(n);var c=t("7a23"),i=Object(c["h"])("div",{class:"text-2xl tracking-tight w-full font-medium pb-4"}," Page sections ",-1),o=Object(c["g"])(" Comming soon.. ");function a(e,n,t,a,s,r){return Object(c["r"])(),Object(c["d"])("div",null,[i,o])}var s={name:"PageSections"};s.render=a;n["default"]=s}}]);
+//# sourceMappingURL=pageSections.8390a08e.js.map
