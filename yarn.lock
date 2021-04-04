@@ -4878,11 +4878,6 @@
   "resolved" "https://registry.npmjs.org/iferr/-/iferr-0.1.5.tgz"
   "version" "0.1.5"
 
-"iframe-resizer@^4.3.1":
-  "integrity" "sha512-PkoTPNF6EYhTbDjogdKu7JVgKqRwwNBXMeywZaQyzEYM3BNltA8O9fIIrtUkmj+8VZGckXpwtXsWsaQ5lrhd0w=="
-  "resolved" "https://registry.npmjs.org/iframe-resizer/-/iframe-resizer-4.3.1.tgz"
-  "version" "4.3.1"
-
 "ignore@^3.3.5":
   "integrity" "sha512-Pgs951kaMm5GXP7MOvxERINe3gsaVjUWFm+UZPSq9xYriQAksyhg0csnS0KXSNRD5NmNdapXEpjxG49+AKh/ug=="
   "resolved" "https://registry.npmjs.org/ignore/-/ignore-3.3.10.tgz"
@@ -8244,11 +8239,6 @@
   dependencies:
     "extend-shallow" "^3.0.0"
 
-"splitpanes@^3.0.4":
-  "integrity" "sha512-KRaPtMDpu++OfvAzNQYE5U7WT5NoMA6l9B0buC4PhYoDILVLY8zN7Sp9cHXAgLhH59jI3lKzVoNqyf4OGRv7QQ=="
-  "resolved" "https://registry.npmjs.org/splitpanes/-/splitpanes-3.0.4.tgz"
-  "version" "3.0.4"
-
 "sprintf-js@~1.0.2":
   "integrity" "sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw="
   "resolved" "https://registry.npmjs.org/sprintf-js/-/sprintf-js-1.0.3.tgz"
@@ -9141,11 +9131,6 @@
     "vue-hot-reload-api" "^2.3.0"
     "vue-style-loader" "^4.1.0"
 
-"vue-resizable@^2.0.1":
-  "integrity" "sha512-3CueadexPK2/243Z4QDrvz1Ya+2T1V2S2MGvKVovyNf+Q0aORJAEyc0Qm63YrvSkEmb9DI5ESgwb5sZFvOhl4A=="
-  "resolved" "https://registry.npmjs.org/vue-resizable/-/vue-resizable-2.0.1.tgz"
-  "version" "2.0.1"
-
 "vue-router@^4.0.0-0":
   "integrity" "sha512-dYv9qpHPaojQlfujViiTkPkf1Bf5RCFzkCkdVFc1cENzWJYAGJanpIHiyjyKoM4u7IDFBZMItci+U4ieaEWA8A=="
   "resolved" "https://registry.npmjs.org/vue-router/-/vue-router-4.0.0-beta.13.tgz"
@@ -9164,7 +9149,7 @@
   "resolved" "https://registry.npmjs.org/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz"
   "version" "1.9.1"
 
-"vue@^3.0.0", "vue@3.x":
+"vue@^3.0.0":
   "integrity" "sha512-ZMrAARZ32sGIaYKr7Fk2GZEBh/VhulSrGxcGBiAvbN4fhjl3tuJyNFbbbLFqGjndbLoBW66I2ECq8ICdvkKdJw=="
   "resolved" "https://registry.npmjs.org/vue/-/vue-3.0.0.tgz"
   "version" "3.0.0"
@@ -9177,13 +9162,6 @@
   "integrity" "sha512-/+4E1dokq5cwbl4mohOqOj8h0vOLOWmLSqlqTf++bfmN9/JKWtwYfsBrzlK0sYrNfuYcpQeX0BVxQHoHXDfYZQ=="
   "resolved" "https://registry.npmjs.org/vuex/-/vuex-4.0.0-beta.4.tgz"
   "version" "4.0.0-beta.4"
-
-"watchpack-chokidar2@^2.0.0":
-  "integrity" "sha512-9TyfOyN/zLUbA288wZ8IsMZ+6cbzvsNyEzSBp6e/zkifi6xxbl8SmQ/CxQq32k8NNqrdVEVUVSEf56L4rQ/ZxA=="
-  "resolved" "https://registry.npmjs.org/watchpack-chokidar2/-/watchpack-chokidar2-2.0.0.tgz"
-  "version" "2.0.0"
-  dependencies:
-    "chokidar" "^2.1.8"
 
 "watchpack@^1.7.4":
   "integrity" "sha512-aWAgTW4MoSJzZPAicljkO1hsi1oKj/RRq/OJQh2PKI2UKL04c2Bs+MBOB+BBABHTXJpf9mCwHN7ANCvYsvY2sg=="
