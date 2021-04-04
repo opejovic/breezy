@@ -10,11 +10,8 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "iframe-resizer": "^4.3.1",
-    "splitpanes": "^3.0.4",
     "tailwindcss": "^1.8.12",
     "vue": "^3.0.0",
-    "vue-resizable": "^2.0.1",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"
   },
