@@ -14,7 +14,7 @@ export default {
   name: "PageExamples",
 
   components: {
-    LandingOne
-  }
+    LandingOne,
+  },
 };
 </script>
